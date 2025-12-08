@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daily task show </title>
+    <script src="https://kit.fontawesome.com/80e3c71521.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="to-do-list.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="main-container">
+            <h4>DATE:-<input type="date" id="date-input" required></h4>
+        <h1>what's your today task ?</h1>
+        <div class="input-data">
+            <input type="text" placeholder="add your task.....👈" id="input-box">
+            <input type="submit" onclick="settask()" id="add-button" value="ADD TASK">
+        </div>
+        <div class="task-container">
+            <ul id="task-list"></ul>
+        </div>
+        </div>
+        <script src="to-do-list.js"></script> 
+    </body>
+</html>

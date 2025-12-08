@@ -1,0 +1,162 @@
+body{
+    background:linear-gradient(to right, #050530, #1101223e);
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+}
+.main-container{
+    width: 80%;
+    height: 88.5vh;
+    text-align: center;
+    border: 3px solid antiquewhite;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    backdrop-filter: blur(6px);
+    border-radius: 20px 50px;
+    position: relative;
+}
+h1{
+    padding-top: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    color:greenyellow;
+    text-shadow :2px 1px antiquewhite;
+    letter-spacing:3px;
+}
+input[type="text"]{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    background-color: antiquewhite;
+    text-transform :capitalize;
+    box-shadow: 2px 2px 5px rgb(5, 17, 109);
+}
+input[type="text"]:hover{
+    border-radius: 40px;
+    background-color: rgb(93, 93, 166);
+    color :blanchedalmond;
+    text-shadow: 2px 2px 5px rgb(253, 169, 3);
+}
+input[type="text"]::placeholder{
+    color: black;
+}
+input[type="text"]:active{
+    background-color: rgb(22, 203, 244);
+}
+
+input[type="submit"]{
+    height: 30px;
+    border-radius: 40px;
+    border: none;
+    padding :0 15px;
+    background-color: rgb(255, 165, 0);
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgb(18, 21, 10);
+    cursor: pointer;
+    outline: none;  
+    margin-left: 15px;
+}
+input[type="submit"]:hover{
+    background-color: rgb(22, 203, 244);
+    color:black;
+}
+.task-container{
+    margin:auto;
+    margin-top: 20px;
+    width:95%;
+    height:61vh;
+    overflow:auto;
+    position: relative;
+}
+li{
+    margin:2px;
+    font-size:20px;
+    text-align: left;
+    padding-left: 20px;
+}
+.delete-btn{
+    background-color: rgb(254, 3, 3);
+    border:none;
+    float:right;
+    border-radius:5px;
+    color:rgb(55, 52, 52);
+    cursor:pointer;
+    padding:10px 12px;
+    font-size:14px;
+    box-shadow:2px 2px 5px rgb(14, 14, 14);
+}
+h4{
+    color: yellowgreen;
+    text-shadow :1px 1px antiquewhite;
+    letter-spacing:3px;
+    font-size: 25px;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+#date-input{
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+    outline: none;
+    box-shadow: 2px 2px 5px rgb(5, 17, 109);
+    background-color: skyblue;
+}
+input[type="date"]:hover{
+    border-radius: 40px;
+    background-color: rgb(93, 93, 166);
+    color :blanchedalmond;
+    text-shadow: 2px 2px 5px rgb(253, 169, 3);
+}
+input[type="checkbox"]{
+    width:18px;
+    height:28px;
+    margin-top:8px;
+    cursor:pointer;
+    position:absolute;
+    left:12px;
+}
+label{
+    font-size:20px;
+    margin-right:15px;
+    color: yellowgreen;
+    text-transform: capitalize;
+    text-shadow :1px 1px antiquewhite;
+    letter-spacing:2px;
+}
+@keyframes strike-animation {
+    from {
+        text-decoration: none;
+        color: yellowgreen;
+    }
+    to {
+        text-decoration: line-through;
+        color: gray;
+    }
+}
+@media only screen and (max-width:768px){
+    .main-container{
+        width: 95%;
+        position: relative;
+    }
+    input[type="text"]{
+        width: 70%;
+    }
+    h1{
+        position:absolute;
+        top:10px;
+        left:120px;
+    }
+    .input-data{
+        margin-top: 100px;
+    }
+}
