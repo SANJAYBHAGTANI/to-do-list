@@ -9,7 +9,8 @@ body{
     width: 80%;
     height: 88.5vh;
     text-align: center;
-    border: 3px solid antiquewhite;
+    border: 3px solid yellowgreen;
+    box-shadow:2px 1px 3px black;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -154,7 +155,13 @@ label{
     h1{
         position:absolute;
         top:10px;
-        left:120px;
+        left:5px;
+        font-size:28px
+    }
+    .date-input,h4{
+        position:absolute;
+        right:20px;
+
     }
     .input-data{
         margin-top: 100px;
