@@ -142,13 +142,13 @@ label{
     h4{
         position:absolute;
         top:-30px;
-        right:40px;
+        right:30px;
     }
     h1{
-        font-size:35px;
+        font-size:25px;
     }
     input[type="text"]{
-        width:450px;
+        width:250px;
         margin-top:-10px;
     }
 }
