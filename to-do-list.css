@@ -134,36 +134,21 @@ label{
     text-shadow :1px 1px antiquewhite;
     letter-spacing:2px;
 }
-@keyframes strike-animation {
-    from {
-        text-decoration: none;
-        color: yellowgreen;
-    }
-    to {
-        text-decoration: line-through;
-        color: gray;
-    }
-}
-@media only screen and (max-width:768px){
+@media screen and (max-width:768px){
     .main-container{
-        width: 95%;
-        position: relative;
+        width:90%;
+        position:relative;
     }
-    input[type="text"]{
-        width: 70%;
+    h4{
+        position:absolute;
+        top:-30px;
+        right:40px;
     }
     h1{
-        position:absolute;
-        top:10px;
-        left:5px;
-        font-size:28px
+        font-size:35px;
     }
-    .date-input,h4{
-        position:absolute;
-        right:20px;
-
-    }
-    .input-data{
-        margin-top: 100px;
+    input[type="text"]{
+        width:450px;
+        margin-top:-10px;
     }
 }
