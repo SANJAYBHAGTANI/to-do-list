@@ -1,5 +1,5 @@
 body{
-    background:linear-gradient(to right, #050530, #1101223e);
+    background:linear-gradient(to right, pink,orange,skyblue);
     background-size:cover;
     margin: 0;
     padding: 0;
@@ -7,14 +7,14 @@ body{
 }
 .main-container{
     width: 80%;
-    height: 88.5vh;
+    height: 87.5vh;
     text-align: center;
-    border: 3px solid yellowgreen;
+    background:hotpink;
+    border: 3px solid red;
     box-shadow:2px 1px 3px black;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    background-color: transparent;
     backdrop-filter: blur(6px);
     border-radius: 20px 50px;
     position: relative;
@@ -24,8 +24,8 @@ h1{
     font-size: 30px;
     text-transform: uppercase;
     padding-top: 20px;
-    color:greenyellow;
-    text-shadow :2px 1px antiquewhite;
+    color:black;
+    text-shadow :2px 1px rgb(215, 242, 250);
     letter-spacing:3px;
 }
 input[type="text"]{
@@ -36,15 +36,14 @@ input[type="text"]{
     font-size: 20px;
     text-align: center;
     outline: none;
-    background-color: antiquewhite;
+    background-color: #f73644;
     text-transform :capitalize;
-    box-shadow: 2px 2px 5px rgb(5, 17, 109);
+    box-shadow: 2px 2px 5px black;
 }
 input[type="text"]:hover{
-    border-radius: 40px;
-    background-color: rgb(93, 93, 166);
-    color :blanchedalmond;
-    text-shadow: 2px 2px 5px rgb(253, 169, 3);
+    border-radius: 30px;
+    background-color: yellow;
+    color :#26010b;
 }
 input[type="text"]::placeholder{
     color: black;
@@ -73,7 +72,7 @@ input[type="submit"]:hover{
     margin:auto;
     margin-top: 20px;
     width:95%;
-    height:61vh;
+    height:55vh;
     overflow:auto;
     position: relative;
 }
@@ -84,7 +83,7 @@ li{
     padding-left: 20px;
 }
 .delete-btn{
-    background-color: rgb(254, 3, 3);
+    background-color: rgb(234, 13, 13);
     border:none;
     float:right;
     border-radius:5px;
@@ -92,30 +91,31 @@ li{
     cursor:pointer;
     padding:10px 12px;
     font-size:14px;
-    box-shadow:2px 2px 5px rgb(14, 14, 14);
+    box-shadow:2px 2px 5px rgb(2, 234, 247);
 }
 h4{
-    color: yellowgreen;
-    text-shadow :1px 1px antiquewhite;
+    color: black;
+    text-shadow :1px 1px #e62a47;
     letter-spacing:3px;
     font-size: 25px;
     position: absolute;
-    right: 20px;
-    top: -20px;
+    top: -25px;
+    right:200px
 }
 #date-input{
     font-size: 18px;
     border-radius: 5px;
     border: none;
+    position:absolute;
     padding: 3px;
     outline: none;
-    box-shadow: 2px 2px 5px rgb(5, 17, 109);
-    background-color: skyblue;
+    top:5px;
+    background-color: transparent;
+    outline:none;
 }
 input[type="date"]:hover{
     border-radius: 40px;
     background-color: rgb(93, 93, 166);
-    color :blanchedalmond;
     text-shadow: 2px 2px 5px rgb(253, 169, 3);
 }
 input[type="checkbox"]{
@@ -129,14 +129,18 @@ input[type="checkbox"]{
 label{
     font-size:20px;
     margin-right:15px;
-    color: yellowgreen;
+    color: black;
     text-transform: capitalize;
     text-shadow :1px 1px antiquewhite;
     letter-spacing:2px;
 }
 @media screen and (max-width:768px){
+    body{
+        height:fit-content;
+    }
     .main-container{
         width:90%;
+        height:85.5vh;
         position:relative;
     }
     h4{
@@ -152,3 +156,4 @@ label{
         margin-top:-10px;
     }
 }
+
