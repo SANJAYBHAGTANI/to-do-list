@@ -146,15 +146,16 @@ label{
         right:190px;
     }
     h1{
-        font-size:22px;
+        font-size:18px;
     }
     input[type="text"]{
-        width:250px;
+        max-width:250px;
         margin-top:-10px;
     }
     input[type="date"]{
         width:130px
     }
 }
+
 
 
