@@ -135,19 +135,15 @@ label{
     letter-spacing:2px;
 }
 @media screen and (max-width:768px){
-    body{
-        width:auto;
-        height:1300px;
-    }
     .main-container{
         width:90%;
-        height:88.5vh;
+        height:80.5vh;
         position:relative;
     }
     h4{
         position:absolute;
         top:-30px;
-        right:220px;
+        right:190px;
     }
     h1{
         font-size:22px;
@@ -156,5 +152,9 @@ label{
         width:250px;
         margin-top:-10px;
     }
+    input[type="date"]{
+        width:130px
+    }
 }
+
 
