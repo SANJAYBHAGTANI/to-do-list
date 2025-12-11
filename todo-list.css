@@ -136,20 +136,21 @@ label{
 }
 @media screen and (max-width:768px){
     body{
-        height:fit-content;
+        width:auto;
+        height:1300px;
     }
     .main-container{
         width:90%;
-        height:85.5vh;
+        height:88.5vh;
         position:relative;
     }
     h4{
         position:absolute;
         top:-30px;
-        right:30px;
+        right:220px;
     }
     h1{
-        font-size:25px;
+        font-size:22px;
     }
     input[type="text"]{
         width:250px;
