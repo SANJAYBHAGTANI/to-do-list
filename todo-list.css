@@ -136,7 +136,7 @@ label{
 }
 @media screen and (max-width:768px){
     .main-container{
-        width:90%;
+        max-width:90%;
         height:80.5vh;
         position:relative;
     }
@@ -146,16 +146,15 @@ label{
         right:190px;
     }
     h1{
-        font-size:18px;
+        font-size:22px;
     }
     input[type="text"]{
         max-width:250px;
         margin-top:-10px;
     }
     input[type="date"]{
-        width:130px
+        max-width:130px
     }
 }
-
 
 
