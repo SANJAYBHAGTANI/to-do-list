@@ -108,6 +108,12 @@ input[type="checkbox"]{
     position:absolute;
     left:12px;
 }
+.input-data{
+    background-color: rgba(128, 95, 95, 0.4);
+    margin-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 50px;
+}   
 
 @media screen and(max-width:768px){
     .main-container{
@@ -120,5 +126,8 @@ input[type="checkbox"]{
     }
     input[type="text"]{
         max-width:250px;
+    }
+    .input-data{
+        margin-bottom: 20px;
     }
 }
