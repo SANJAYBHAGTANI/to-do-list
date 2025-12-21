@@ -1,6 +1,6 @@
 body{
     background-size:cover;
-    /* background:url(https://www.canva.com/templates/s/purple-background/); */
+    background:url(purple.webp);
     margin: 0;
     padding: 0;
     font-family: "Playfair Display", serif;
@@ -131,3 +131,4 @@ input[type="checkbox"]{
         margin-bottom: 20px;
     }
 }
+
