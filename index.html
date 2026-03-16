@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daily task show </title>
+    <script src="https://kit.fontawesome.com/80e3c71521.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="main-container">
+            <div class="theme-toggle">
+                <span id="mode-text">Light</span>
+                <label class="switch">
+                <input type="checkbox" id="mode-toggle">
+                <span class="slider"></span>
+                </label>
+            </div>
+            <h3>what's your today task ?</h3>
+            <div class="input-container">
+                    <input type="text" placeholder="add your task.....👈" id="input-box">
+                    <input type="submit" onclick="settask()" id="add-button" value="ADD TASK">
+            </div>
+            <div class="task-container">
+                <ul id="task-list" ></ul>
+            </div>
+            <button id="clear-btn" onclick="clearAll()" style="display:none;">Clear All</button>
+        </div>
+        <!-- process bar or  dark/light mode kese add hogaa -->
+        <script src="script.js"></script> 
+    </body>
+</html>
+
+
+
+
+
