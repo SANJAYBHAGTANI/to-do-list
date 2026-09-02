@@ -1,7 +1,6 @@
 const userTask = document.querySelector("#addItem");
 const SubmitBtn = document.querySelector("#AddLogo");
 
-// Elements
 const viewAll = document.querySelector(".Listitem");
 const viewComplete = document.querySelector(".CompleteItem");
 const viewPending = document.querySelector(".PandingItem");
@@ -16,7 +15,6 @@ const listHistory = document.querySelector("#AllHistoryTaskHere");
 
 const sideButtons = document.querySelectorAll(".SidePannel button");
 
-// Global State
 let tasksData = [];
 let historyData = [];
 let currentTab = "all";
