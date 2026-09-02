@@ -3,36 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>daily task show </title>
-    <script src="https://kit.fontawesome.com/80e3c71521.js" crossorigin="anonymous"></script>
+    <title>My List</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/80e3c71521.js" crossorigin="anonymous"></script>
 </head>
-    <body>
-        <div class="main-container">
-            <div class="theme-toggle">
-                <span id="mode-text">Light</span>
-                <label class="switch">
-                <input type="checkbox" id="mode-toggle">
-                <span class="slider"></span>
-                </label>
+<body>
+    <header>
+        <h1 id="mainHeading">Task Manager for your all upcomming task</h1>
+    </header>
+    <div class="mainContainer">
+        <aside class="SidePannel">
+            <button onclick="AllTaskShow()"><i class="fa-solid fa-border-all"></i>All task</button>
+            <button onclick="AllCompleteTask()"><i class="fa-solid fa-check-double"></i>complete</button>
+            <button onclick="AllPandingTask()"><i class="fa-solid fa-hourglass"></i>panding</button>
+            <button onclick="AllImportantTask()"><i class="fa-regular fa-star"></i>important</button>
+            <button onclick="AllHistoryTask()"><i class="fa-solid fa-clock-rotate-left"></i>history</button>
+        </aside>
+
+        <div class="ListPannel">
+            <div class="InputPannel">
+                <input id="addItem" type="text" placeholder="add your task......">
+                <button id="AddLogo" >+</button>
             </div>
-            <h3>what's your today task ?</h3>
-            <div class="input-container">
-                    <input type="text" placeholder="add your task.....👈" id="input-box">
-                    <input type="submit" onclick="settask()" id="add-button" value="ADD TASK">
+
+            <div class="Listitem">
+                <ol id="AllTaskHere" type="A"></ol>
             </div>
-            <div class="task-container">
-                <ul id="task-list" ></ul>
+
+            <div class="CompleteItem">
+                <ol id="AllCompleteTaskHere" type="A">c</ol>
             </div>
-            <button id="clear-btn" onclick="clearAll()" style="display:none;">Clear All</button>
+
+            <div class="PandingItem">
+                <ol id="AllPandingTaskHere" type="A">P</ol>
+            </div>
+            
+            <div class="ImportantItem">
+                <ol id="AllImportantTaskHere" type="A">I</ol>
+            </div>
+
+            <div class="HistoryItem">
+                <ol id="AllHistoryTaskHere" type="A">H</ol>
+            </div>
+
         </div>
-        <!-- process bar or  dark/light mode kese add hogaa -->
-        <script src="script.js"></script> 
-    </body>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
-
-
-
-
-
